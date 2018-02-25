@@ -143,5 +143,22 @@ footer .logo {
 }
 
 @media only screen and (max-width: 1024px) {
-  
+  .container {
+    width: 100%;
+  }
+
+  .jumbotron {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .saying {
+    top: 8rem;
+    left: 0;
+    padding: 0.75rem 4rem;
+  }
+
+  .saying h1 {
+    font-size: 1.33rem;
+  }
 }
