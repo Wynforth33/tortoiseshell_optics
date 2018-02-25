@@ -59,6 +59,10 @@ nav span {
   margin-left: 2rem;
 }
 
+#menu {
+  display: none;
+}
+
   /* Banner */
 .banner {
   justify-content: flex-end;
@@ -87,8 +91,6 @@ nav span {
 .claims {
   flex-direction: row;
   justify-content: center;
-  height: 14rem;
-  overflow: hidden;
 }
 
 .claim {
@@ -99,6 +101,10 @@ nav span {
   height: 8rem;
   width: 5rem;
   margin: 3rem;
+}
+
+.claim img {
+  margin-bottom: 1rem;
 }
 
 #paper {
@@ -134,19 +140,12 @@ nav span {
   /* Footer */
 footer {
   background-color: azure;
-  justify-content: flex-start;
   height: 8rem;
-}
-
-footer .logo {
-  padding: 4rem 0;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-
   .jumbotron {
     height: 22rem;
     padding-top: 0;
@@ -156,9 +155,94 @@ footer .logo {
     top: 8rem;
     left: 0;
     padding: 0.75rem 4rem;
+    margin-right: 2rem;
   }
 
   .saying h1 {
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .jumbotron {
+    height: 17rem;
+    padding-top: 0;
+    background-position: 20%;
+  }
+
+  #title,
+  nav span {
+    display: none;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .saying {
+    top: 9rem;
+    left: 0;
+    padding: 1rem 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .saying h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .claims {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3rem;
+  }
+
+  .claim {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+  .claim img {
+    margin: 0.77rem;
+  }
+
+  .claim h3 {
+    font-size: 0.77rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-direction: column;
+    margin: 0 5%;
+    width: auto;
+    margin-bottom: 4rem;
+  }
+
+  .info h3 {
+    text-align: center;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    max-width: 100%;
+
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #copyright {
+    display: none;
   }
 }
