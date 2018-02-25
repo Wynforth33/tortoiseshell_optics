@@ -30,7 +30,7 @@ a {
   padding-top: 1rem;
 }
 
-/* Header */
+  /* Header */
 header {
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -59,7 +59,7 @@ nav span {
   margin-left: 2rem;
 }
 
-/* Banner */
+  /* Banner */
 .banner {
   justify-content: flex-end;
 }
@@ -79,3 +79,69 @@ nav span {
 }
 
 /* Main Content */
+.main {
+  flex-direction: column;
+}
+
+  /* Claims */
+.claims {
+  flex-direction: row;
+  justify-content: center;
+  height: 14rem;
+  overflow: hidden;
+}
+
+.claim {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+#paper {
+  width: 3.5rem;
+  height: auto;
+}
+
+#ruler,
+#truck {
+  width: 5rem;
+  height: auto;
+}
+
+  /* About */
+.about {
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.info {
+  flex-direction: column;
+  margin: 0 5%;
+  width: 35%;
+}
+
+.info h3 {
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  color: white;
+  max-width: 10rem;
+}
+
+  /* Footer */
+footer {
+  background-color: azure;
+  justify-content: flex-start;
+  height: 8rem;
+}
+
+footer .logo {
+  padding: 4rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
