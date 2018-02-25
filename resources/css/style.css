@@ -1,3 +1,4 @@
+/* Universal */
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -5,4 +6,12 @@
 
 .flex {
   display: flex;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
