@@ -10,13 +10,26 @@ a {
   text-decoration: none;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
+.logo {
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.logo h3{
+  margin-left: 1rem;
 }
 
 /* Jumbotron */
@@ -36,19 +49,6 @@ header {
   padding: 1rem 2rem;
   background-color: cadetblue;
   color: white;
-}
-
-.logo {
-  align-items: center;
-}
-
-.logo img {
-  height: 1.5rem;
-  width: auto;
-}
-
-.logo h3{
-  margin-left: 1rem;
 }
 
 nav {
@@ -133,6 +133,7 @@ nav span {
 .info h3 {
   padding: 0.5rem 1.25rem;
   background-color: cadetblue;
+  font-weight: bold;
   color: white;
   max-width: 10rem;
 }
@@ -204,6 +205,7 @@ footer {
     margin: 0.77rem;
     font-size: 0.77rem;
   }
+
   .claim img {
     margin: 0.77rem;
   }
@@ -217,17 +219,12 @@ footer {
   }
 
   .info {
-    flex-direction: column;
-    margin: 0 5%;
     width: auto;
     margin-bottom: 4rem;
   }
 
   .info h3 {
     text-align: center;
-    font-weight: bold;
-    background-color: cadetblue;
-    color: white;
     max-width: 100%;
 
   }
